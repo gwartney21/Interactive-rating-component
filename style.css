@@ -1,0 +1,26 @@
+ body{
+    background: #131518;
+ }
+ .mainContainer{
+
+    display: flex;
+   
+    align-items: center;
+    justify-content: center;
+     
+}
+
+.content{
+    background: radial-gradient(98.96% 98.96% at 50% 0%, #232A34 0%, #181E27 100%);
+    margin:10rem;
+    width: 416px;
+    height:416px;
+    border-radius: 30px;
+    
+}
+.starIcon > img{
+   
+    padding: 20px;
+    border-radius: 50%;
+    background-color: grey;
+}
