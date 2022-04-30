@@ -3,76 +3,121 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
+   
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  <link rel="stylesheet" type="text/css" href="./style.css">
-
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://fonts.google.com/specimen/Overpass">
   <title>Frontend Mentor | Interactive rating component</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
+
     .attribution { font-size: 11px; text-align: center; }
     .attribution a { color: hsl(228, 45%, 44%); }
+
+    
+   body{
+     background-color: #131518;
+   }
+
+   .row{
+     width: 412px;
+     height: 416px;
+     background: radial-gradient(98.96% 98.96% at 50% 0%, #232A34 0%, #181E27 100%);
+     border-radius: 30px;
+   }
+
+   h1{
+    font-family: 'Overpass', sans-serif;
+    font-style: normal;
+
+    color: #FFFFFF;
+   }
+
+   p{
+    font-family: 'Overpass',sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 24px;
+    color: lightgrey;
+   }
+
+   .btn-secondary{
+     width: 51px;
+     height: 51px;
+     background-color: #262E38;
+   }
+
+   .submit{
+    background-color: #FC7614;
+    border-radius:22.5px;
+    font-family:'Overpass',sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 19px;
+    letter-spacing: 2px;
+    color: white;
+   }
+
+
   </style>
 </head>
 <body>
 
-  <div class="mainContainer">
-    <div class="content">
-      <div class="starIcon">
-        <img src = "./images/icon-star.svg" alt="My Happy SVG"/>
+  <!-- Rating state start -->
+
+  <div class="container d-flex flex-column justify-content-center align-items-center  vh-100 rounded">
+   <!-- Row1 -->
+   
+    <div class="row bg-primary" >
+      <div class="col">
+
+        <svg width="17" height="16" xmlns="http://www.w3.org/2000/svg"><path d="m9.067.43 1.99 4.031c.112.228.33.386.58.422l4.45.647a.772.772 0 0 1 .427 1.316l-3.22 3.138a.773.773 0 0 0-.222.683l.76 4.431a.772.772 0 0 1-1.12.813l-3.98-2.092a.773.773 0 0 0-.718 0l-3.98 2.092a.772.772 0 0 1-1.119-.813l.76-4.431a.77.77 0 0 0-.222-.683L.233 6.846A.772.772 0 0 1 .661 5.53l4.449-.647a.772.772 0 0 0 .58-.422L7.68.43a.774.774 0 0 1 1.387 0Z" fill="#FC7614"/></svg>
+
+          <h1>How did we do?</h1>
+          <p>
+            Please let us know how we did with your support request. All feedback is appreciated 
+            to help us improve our offering!
+           
+          </p>
+           
+       
+            <div class="btn-group" role="group" aria-label="Basic example">
+              <button type="button" class="btn m-2 btn-secondary rounded-circle">1</button>
+              <button type="button" class="btn m-2 btn-secondary rounded-circle">2</button>
+              <button type="button" class="btn m-2 btn-secondary rounded-circle">3</button>
+              <button type="button" class="btn m-2 btn-secondary rounded-circle">4</button>
+              <button type="button" class="btn m-2 btn-secondary rounded-circle">5</button>
+           </div>
+
+           <button type="button" class="btn submit btn-lg btn-block">Submit</button>
+           
       </div>
-
-      <h1>How did we do?</h1>
-
-      <p>Please let us know how we did with your support request. All feedback is appreciated 
-      to help us improve our offering!</p>
-
-
-      <ul>
-        <li>1</li>
-        <li>2</li>
-        <li>3</li>
-        <li>4</li>
-      </ul>
-
-
-    <button>Submit</button>   
-
     </div>
+   <!-- End Row1 -->
+
+
+
   </div>
 
-      <!-- Rating state start
-  
-
-    
-    
-     
-
-    
 
 
-    <!-- Rating state end -->
 
-    <!-- Thank you state start -->
+  <!-- Rating state end -->
 
-    <!-- You selected  out of 5 -->
-<!-- 
-    Thank you!
+  <!-- Thank you state start -->
 
-    We appreciate you taking the time to give a rating. If you ever need more support, 
-    don’t hesitate to get in touch! -->
+  <!-- You selected Add rating here out of 5 -->
 
-    <!-- Thank you state end -->
+  <!-- Thank you!
 
-  <!-- <footer>
-    <div class="attribution">
-      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-      Coded by <a href="#">Your Name Here</a>.
-    </div>
-  </footer> -->
-  
- 
-  
+  We appreciate you taking the time to give a rating. If you ever need more support, 
+  don’t hesitate to get in touch! -->
+
+  <!-- Thank you state end -->
+
+
 </body>
 </html>
