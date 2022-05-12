@@ -38,13 +38,12 @@
 
     
 
-  .RatingIconWrapper{
+  /* .RatingIconWrapper{
  
 
      margin:41px 129px 32px 121px; 
 
- 
-  }
+  } */
 
    .row{
      width: 412px;
@@ -59,6 +58,7 @@
     font-size: 28px;
     line-height: 35px;
     color: #FFFFFF;
+    text-align: center;
    }
 
    p{
@@ -70,14 +70,14 @@
     /* or 160% */
     text-align: center;
     color: #969FAD;
- 
- 
    }
 
-   h1 + p{
-    margin-left: 24px;
-    margin-right: 24px;
-   }
+  h1 + p{
+    width: 340px;
+    margin: auto;
+    font-size: 15px;
+  }
+   
 
    .finalRaiting{
        background-color: hsl(213, 19%, 18%);
@@ -86,7 +86,7 @@
        height: 32px;
        margin-left: auto;
        margin-right: auto;
-       margin-bottom: 32px;
+       margin-bottom: 34px
    }
 
    .finalRaiting > p{
@@ -144,11 +144,16 @@
      justify-content: center;
    }
 
+   .RatingIconWrapper{
+     margin-top: 45px; 
+     margin-bottom: 32px;
+  }
+
    @media (max-width: 375px){
 
    .row{
      width: 327px;
-     height: 416px;
+     height: 360px;
      
      }
 
@@ -156,7 +161,10 @@
         margin: 24px;
       }
 
-
+ .RatingIconWrapper{
+     margin-top: 34px; 
+     margin-bottom: 24px;
+  }
   .iconwraper{
     width: 40px;
     height: 40px;
@@ -174,18 +182,34 @@
    }
 
    h1{
-    padding-left: 24px;
-    padding-right: 24px;
-   
+    text-align: center;
+    font-size: 24px;
    }
 
    .submit{
      width: 279px;
    }
 
-   p{
-    padding-left: 24px;
- 
+
+   .finalRaiting > p{
+    font-family: 'Overpass',sans-serif;
+    font-style: normal;
+    color: #FC7614;
+    padding: 5px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 22px;
+    text-align: center;
+   }
+
+   .finalRaiting{
+     margin-bottom: 24px;
+   }
+
+   h1 + p{
+  
+    font-size: 14px;
+    width: 279px;
    }
    
    }
@@ -214,7 +238,7 @@
     
       
 
-        <h1 class="d-flex justify-content-center">Thank You!</h1>
+        <h1 class="">Thank You!</h1>
         
         <p>
             We appreciate you taking the time to give a rating. If you ever need more support, don’t hesitate to get in touch!
@@ -222,7 +246,7 @@
            
       </div>
     </div>
-   <!-- End Row1 -->
+
  
 
   </div>
