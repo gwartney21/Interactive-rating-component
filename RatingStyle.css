@@ -1,0 +1,175 @@
+
+   body{
+     background-color: #131518;
+   }
+
+    
+   .row{
+     width: 412px;
+     height: 416px;
+     background: radial-gradient(98.96% 98.96% at 50% 0%, #232A34 0%, #181E27 100%);
+     border-radius: 30px;
+   }
+
+   h1{
+    font-family: 'Overpass', sans-serif;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 35px;
+    color: #FFFFFF;
+    text-align: center;
+   }
+
+   p{
+    font-family: 'Overpass',sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 24px;
+    /* or 160% */
+    text-align: center;
+    color: #969FAD;
+   }
+
+  h1 + p{
+    width: 340px;
+    margin: auto;
+    font-size: 15px;
+  }
+   
+
+   .finalRaiting{
+       background-color: hsl(213, 19%, 18%);
+
+       width: 193px;
+       height: 32px;
+       margin-left: auto;
+       margin-right: auto;
+       margin-bottom: 34px
+   }
+
+   .finalRaiting > p{
+    font-family: 'Overpass',sans-serif;
+    font-style: normal;
+    color: #FC7614;
+    padding: 5px;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 24px;
+    text-align: center;
+   }
+
+   .btn-secondary{
+     width: 51px;
+     height: 51px;
+     background-color: #262E38;
+   }
+
+   .submit{
+    background-color: #FC7614;
+    border-radius: 22.5px;
+    font-family: 'Overpass',sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    letter-spacing: 2px;
+    color: white;
+    width: 341px;
+    margin-top: 24px;
+    margin-bottom:32px;
+    padding-top: 11px;
+    padding-bottom: 15px;
+    margin-bottom: 32px;
+    height: 45px
+   }
+
+   .submit:hover{
+     background-color: #F2F2F2;
+     color: #FC7614;
+   }
+
+   .submitButton{
+     justify-content: center;
+   }
+   .btn-group > button{
+     color: #7C8798;
+     border: none;
+   }
+
+   .btn-group{
+     width: 341px;
+   }
+
+   .buttonRating{
+     justify-content: center;
+   }
+
+   .RatingIconWrapper{
+     margin-top: 45px; 
+     margin-bottom: 32px;
+  }
+
+   @media (max-width: 375px){
+
+   .row{
+     width: 327px;
+     height: 360px;
+     
+     }
+
+     .icon > svg{
+        margin: 24px;
+      }
+
+ .RatingIconWrapper{
+     margin-top: 34px; 
+     margin-bottom: 24px;
+  }
+  .iconwraper{
+    width: 40px;
+    height: 40px;
+    margin:24px;
+   }
+
+   .btn-secondary{
+     width: 42px;
+     height: 42px;
+     background-color: #262E38;
+   }
+
+   .btn-group{
+     width: 281px;
+   }
+
+   h1{
+    text-align: center;
+    font-size: 24px;
+   }
+
+   .submit{
+     width: 279px;
+   }
+
+
+   .finalRaiting > p{
+    font-family: 'Overpass',sans-serif;
+    font-style: normal;
+    color: #FC7614;
+    padding: 5px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 22px;
+    text-align: center;
+   }
+
+   .finalRaiting{
+     margin-bottom: 24px;
+   }
+
+   h1 + p{
+  
+    font-size: 14px;
+    width: 279px;
+    margin: auto;
+   }
+   
+}
