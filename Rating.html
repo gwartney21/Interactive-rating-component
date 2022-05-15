@@ -25,6 +25,7 @@
   <link rel="stylesheet" href="https://fonts.google.com/specimen/Overpass">
   <title>Frontend Mentor | Interactive rating component</title>
 
+
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
 
@@ -210,6 +211,7 @@
   
     font-size: 14px;
     width: 279px;
+    margin: auto;
    }
    
    }
@@ -230,15 +232,13 @@
         </div>
         
             <div class="finalRaiting rounded-pill">
-                <p>
-                    You selected 4 out of 5! 
-                </p>
+                <p id="Select"></p>
             </div>
           
     
       
 
-        <h1 class="">Thank You!</h1>
+        <h1>Thank You!</h1>
         
         <p>
             We appreciate you taking the time to give a rating. If you ever need more support, don’t hesitate to get in touch!
@@ -254,6 +254,17 @@
 
 
 
+<script>
+
+ var url =  window.location.search
+ 
+ let params = new URLSearchParams(window.location.search);
+ let name = params.get("lname"); 
+ let setRating = `You selected ${name} out of 5`;
+
+ document.getElementById("Select").innerHTML = setRating;
+ 
+ </script>
 
 </body>
 </html>

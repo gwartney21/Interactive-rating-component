@@ -6,9 +6,13 @@
    
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-  <link rel="stylesheet" href="https://fonts.google.com/specimen/Overpass">
-  <title>Frontend Mentor | Interactive rating component</title>
 
+  @import url('https://fonts.google.com/specimen/Overpass');
+ 
+  <title>Frontend Mentor | Interactive rating component</title>
+  
+
+  
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
 
@@ -48,7 +52,7 @@
     font-weight: 700;
     font-size: 28px;
     line-height: 35px;
-    padding-left: 32px;
+    margin-left: 32px;
     color: #FFFFFF;
    }
 
@@ -182,45 +186,46 @@
            
           </p>
            
+               
+        <form type="GET" action="http://localhost:3000/Rating">
           <div class="d-flex buttonRating">
             <div class="btn-group" role="group" aria-label="Basic example">
-              <button type="button" class="btn m-2 btn-secondary rounded-circle">1</button>
-              <button type="button" class="btn m-2 btn-secondary rounded-circle">2</button>
-              <button type="button" class="btn m-2 btn-secondary rounded-circle">3</button>
-              <button type="button" class="btn m-2 btn-secondary rounded-circle">4</button>
-              <button type="button" class="btn m-2 btn-secondary rounded-circle">5</button>
+              <button type="button"  name="1" class="btn m-2 btn-secondary rounded-circle ratingButton">1</button>
+              <button type="button"  name="2" class="btn m-2 btn-secondary rounded-circle ratingButton">2</button>
+              <button type="button"  name="3" class="btn m-2 btn-secondary rounded-circle ratingButton">3</button>
+              <button type="button"  name="4" class="btn m-2 btn-secondary rounded-circle ratingButton">4</button>
+              <button type="button"  name="5" class="btn m-2 btn-secondary rounded-circle ratingButton">5</button>
            </div>
           </div>
-          
 
-           <div class="d-flex submitButton">
-            <button type="button" class="btn submit btn-lg btn-block">SUBMIT</button>
-           </div>
+            <div class="d-flex submitButton">
+              <input type="hidden" id="lname" name="lname" value=""> 
+              <button type="submit" class="btn submit btn-lg btn-block">SUBMIT</button>
+             </div>
+          </form>
+           
            
            
       </div>
     </div>
-   <!-- End Row1 -->
- 
-
   </div>
 
+  <script>
+    var buttons = document.querySelectorAll('.ratingButton');
+ 
 
+    
+ 
+ for (var i=0; i<buttons.length; ++i) {
+     buttons[i].addEventListener('click', function(){
+        let val = document.getElementById('lname');
+        val.value = this.name
+     });
+ }
 
+ 
+  </script>
 
-  <!-- Rating state end -->
-
-  <!-- Thank you state start -->
-
-  <!-- You selected Add rating here out of 5 -->
-
-  <!-- Thank you!
-
-  We appreciate you taking the time to give a rating. If you ever need more support, 
-  don’t hesitate to get in touch! -->
-
-  <!-- Thank you state end -->
-
-
+  
 </body>
 </html>
