@@ -1,6 +1,6 @@
-# Frontend Mentor - Interactive rating component solution
+ # Interactive rating component solution
 
-This is a solution to the [Interactive rating component challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/interactive-rating-component-koxpeBUmI). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
+Interactive rating component
 
 ## Table of contents
 
@@ -8,15 +8,9 @@ This is a solution to the [Interactive rating component challenge on Frontend Me
   - [The challenge](#the-challenge)
   - [Screenshot](#screenshot)
 - [Built with](#built-with)
-- [Author](#author)
-- [Acknowledgments](#acknowledgments)
-
-**Note: Delete this note and update the table of contents based on what sections you keep.**
-
+ 
 ## Overview
-
-### The challenge
-
+ 
 Users should be able to:
 
 - View the optimal layout for the app depending on their device's screen size
@@ -26,13 +20,9 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshot.jpg)
-
-
-### Links
-
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+![](./images/ReadMeScreenShotOne.png)
+![](./images/ReadMeScreenShotTwo.png)
+![](./images/ReadMeScreenShotThree.png)
 
 ## My process
 
@@ -42,16 +32,4 @@ Users should be able to:
 - CSS custom properties
 - Flexbox
 - Mobile-first workflow
-- [React](https://reactjs.org/) - JS library
- 
-
-If you want more help with writing markdown, we'd recommend checking out [The Markdown Guide](https://www.markdownguide.org/) to learn more.
-
-**Note: Delete this note and the content within this section and replace with your own learnings.**
-
-## Author
-
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
-- Twitter - [@yourusername](https://www.twitter.com/yourusername)
-
- 
+- BootStrap5

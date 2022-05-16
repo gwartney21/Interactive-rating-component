@@ -1,5 +1,5 @@
 
- var url =  window.location.search
+let url =  window.location.search
  
  let params = new URLSearchParams(window.location.search);
  let getRating = params.get("lname"); 
