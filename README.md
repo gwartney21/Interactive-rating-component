@@ -23,8 +23,7 @@ Features:
 ![](./images/ReadMeScreenShotTwo.png)
 ![](./images/ReadMeScreenShotThree.png)
 
-## My process
-
+ 
 ### Built with
 
 - Semantic HTML5 markup
