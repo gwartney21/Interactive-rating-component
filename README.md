@@ -5,8 +5,7 @@ Interactive rating component
 ## Table of contents
 
 - [Overview](#overview)
-  - [The challenge](#the-challenge)
-  - [Screenshot](#screenshot)
+- [Screenshot](#screenshot)
 - [Built with](#built-with)
  
 ## Overview
